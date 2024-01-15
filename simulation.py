@@ -115,13 +115,17 @@ plt.legend(); plt.show()
 #"""
 strategy_list=np.array([11,25]);
 percent_strategy_list=np.zeros(strategy_list.shape); percent_strategy_list[0]=0.3; percent_strategy_list[1]=0.7
-iteration=500000;inital_rate25=percent_strategy_list[1]; inital_rate11=percent_strategy_list[0]
+iteration=50000;inital_rate25=percent_strategy_list[1]; inital_rate11=percent_strategy_list[0]
 
 stability_point25=get_stability_point(strategy_list[1], strategy_list, percent_strategy_list) #stability point of strategy 25
 
 stragy_dynamics25=dynamics_rate_age(strategy_list[1], strategy_list, percent_strategy_list, b=3, c=25, sigma=1, c_fertilty=2, p_i=1, iteration=iteration)
+stragy_dynamics11=dynamics_rate_age(strategy_list[0], strategy_list, percent_strategy_list, b=3, c=25, sigma=1, c_fertilty=2, p_i=1, iteration=iteration)
 
-plt.scatter(range(len(stragy_dynamics25)),stragy_dynamics25, label='Dynamics of strategy 25'); plt.title("Dynamics of strategy: two kinds of stragy");
+plt.scatter(range(len(stragy_dynamics25)),stragy_dynamics25, label='Dynamics of strategy 25');
+plt.scatter(range(len(stragy_dynamics11)),stragy_dynamics11, label='Dynamics of strategy 11');
+
+plt.title("Dynamics of strategy: two kinds of stragy", fontsize=20);
 plt.xlabel("Time", fontsize=20); plt.ylabel("Rate of strategy 25", fontsize=20); 
 plt.legend(); plt.show()
 
