@@ -13,5 +13,6 @@ You can download them in data folder and each data is corresponded to figure in 
 If you want to make other data, then you can modify parameter in code.
 All figure is displayed using matplotlib.pyplot
 There is no data pre-processing.
+figure.zip is original graph png file in paper.
 
 Data for average mating age in prehisotry can be found at supplementary material in DOI:10.1126/sciadv.abm7047
