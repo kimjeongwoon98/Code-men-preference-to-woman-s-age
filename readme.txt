@@ -15,6 +15,6 @@ For example, 1-a is a data used to display at (1-a) of table1.
 If you want to make other data, then you can modify parameter in code.
 All figure is displayed using matplotlib.pyplot
 There is no data pre-processing.
-figure.zip is original graph png file in paper.
+figure.zip is a collection of original graph png file in table1 and table2.
 
 Data for average mating age in prehisotry can be found at supplementary material in DOI:10.1126/sciadv.abm7047
